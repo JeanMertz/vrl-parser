@@ -1,0 +1,16 @@
+[package]
+name = "vrl"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = []
+trace = ["nom-tracable/trace"]
+
+[dependencies]
+nom = { version = "7", default-features = false, features = ["std"] }
+nom-tracable = { version = "0.8", default-features = false }
+nom_locate = { version = "4", default-features = false }
+
+[dev-dependencies]
+test-case = { version = "2", default-features = false }
